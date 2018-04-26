@@ -1,0 +1,21 @@
+// bower:scss
+// endbower
+/*
+--------------------------------------------------
+   Font Faces
+--------------------------------------------------
+*/
+
+/*
+- - - > |  @font-face  | < - - -
+*/
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue.eot');
+  src: url('../fonts/HelveticaNeue.woff2') format('woff2'),
+       url('../fonts/HelveticaNeue.woff') format('woff'),
+       url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

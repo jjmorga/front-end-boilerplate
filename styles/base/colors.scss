@@ -1,0 +1,21 @@
+// bower:scss
+// endbower
+/*
+--------------------------------------------------
+    Color Class Helpers
+-------------------------------------------------- 
+*/
+
+$theme-color-map: (
+    black:                    $color-black,
+    white:                    $color-white,
+);
+
+@each $name, $color in $theme-color-map {
+    .text-#{$name} {
+        color: $color;
+    }
+    .bg-#{$name} {
+        background-color: $color;
+    }
+}

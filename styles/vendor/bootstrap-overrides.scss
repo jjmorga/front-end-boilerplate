@@ -1,0 +1,33 @@
+// bower:scss
+// endbower
+/*
+--------------------------------------------------
+    Bootstrap Overrides
+-------------------------------------------------- 
+*/
+$gutter-width: 8px;
+
+div[class^="col"]{padding-left:$gutter-width; padding-right:$gutter-width;}
+
+/* MD Desktop */
+@include media-breakpoint-up(md) {
+	.col-md-7-5{
+    	flex: 0 0 62.50000333%;
+    	max-width: 62.50000333%;
+   	}
+   	.col-md-push-0-5{
+    	margin-left: 4.16666667%;
+	}
+}
+
+/* LG Desktop */
+@include media-breakpoint-up(lg) {
+	.container{
+		max-width:1280px;
+	}
+}
+
+.row {
+  margin-right: -$gutter-width;
+  margin-left: -$gutter-width;
+}

@@ -1,0 +1,19 @@
+/*
+ *  Root Sass file for this pagelib.
+ */
+
+/* Load all component styles */
+@import "node_modules/bootstrap-4-grid/scss/grid.scss";
+@import "styles/vendor/bootstrap-overrides.scss";
+@import "styles/global/spacing.scss";
+@import "styles/global/variables.scss";
+@import "styles/fonts/typography.scss";
+@import "styles/fonts/fonts.scss";
+@import "styles/fonts/fontawesome.scss";
+@import "styles/global/global.scss";
+@import "styles/base/mixins.scss";
+@import "styles/global/brand.scss";
+@import "styles/base/colors.scss";
+@import "styles/base/buttons.scss";
+@import "styles/vendor/dev-tools.scss";
+@import "pagelibs.components.scss";

@@ -1,0 +1,53 @@
+// bower:scss
+// endbower
+/*
+--------------------------------------------------
+    Padding Classes
+-------------------------------------------------- 
+*/
+
+$spacing-sm: 15px;
+$spacing-md: 30px;
+$spacing-lg: 45px;
+$spacing-xl: 60px;
+
+// padding rules
+@mixin padding_classes($val: 15px) {
+
+	.pad-sm { padding: $val; }
+	.pad-top-sm { padding-top: $val; }
+	.pad-bot-sm { padding-bottom: $val; }
+
+	.pad-md { padding: $val*2; }
+	.pad-top-md { padding-top: $val*2; }
+	.pad-bot-md { padding-bottom: $val*2; }
+
+	.pad-lg { padding: $val*3; }
+	.pad-top-lg { padding-top: $val*3; }
+	.pad-bot-lg { padding-bottom: $val*3; }
+
+	.pad-xl { padding: $val*4; }
+	.pad-top-xl { padding-top: $val*4; }
+	.pad-bot-xl { padding-bottom: $val*4; }
+}
+@include padding_classes(15px);
+
+// margin rules
+@mixin margin_classes($val: 15px) {
+	.margin-sm { margin: $val; }
+	.margin-top-sm { margin-top: $val; }
+	.margin-bot-sm { margin-bottom: $val; }
+
+	.margin-md { margin: $val*2; }
+	.margin-top-md { margin-top: $val*2; }
+	.margin-bot-md { margin-bottom: $val*2; }
+
+	.margin-lg { margin: $val*3; }
+	.margin-top-lg { margin-top: $val*3; }
+	.margin-bot-lg { margin-bottom: $val*3; }
+
+	.margin-xl { margin: $val*4; }
+	.margin-top-xl { margin-top: $val*4; }
+	.margin-bot-xl { margin-bottom: $val*4; }
+}
+@include margin_classes(15px);

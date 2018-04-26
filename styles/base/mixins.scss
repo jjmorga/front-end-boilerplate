@@ -1,0 +1,62 @@
+﻿//--------------------------------------------------
+//    Prefix mixins
+//--------------------------------------------------
+
+@mixin blur($val) {
+	-webkit-filter: blur(#{$val}px);
+	filter: blur(#{$val}px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='$val');
+}
+
+@mixin no_blur() {
+	-webkit-filter: blur(0px);
+	filter: blur(0px);
+	filter: none;
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+
+@mixin transition($transition...) {
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+
+// generic transform
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+// rotate
+@mixin rotate($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// translate
+@mixin translate($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// translateX
+@mixin translateX($x) {
+	@include transform(translateX($x));
+}
+
+// translateY
+@mixin translateY($y) {
+	@include transform(translateY($y));
+}
+
+// skew
+@mixin skew($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}

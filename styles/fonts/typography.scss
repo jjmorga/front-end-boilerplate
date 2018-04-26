@@ -1,0 +1,300 @@
+// bower:scss
+// endbower
+/*
+--------------------------------------------------
+    Typography
+--------------------------------------------------
+*/
+
+/* Font Families */
+$font-family-light: 'HelveticaNeue-Light';
+$font-family-thin: 'HelveticaNeue-Thin';
+$font-family-regular: 'HelveticaNeue-Regular';
+$font-family-medium: 'HelveticaNeue-Medium';
+$font-family-bold: 'HelveticaNeue-Bold';
+$font-family-condensed-bold: 'HelveticaNeue-CondensedBold';
+
+$font-eyebrow: 'ACaslonPro-Italic';
+$font-pull-quote: 'ACaslonPro-Regular';
+
+
+body {
+    font-family: $font-family-light;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black;
+
+    text-rendering: auto;
+    font-smooth: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+        margin: 0;
+    letter-spacing: initial;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-family-bold;
+        -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+
+}
+
+h1 { font-size: 36px; line-height: 40px; margin: $spacing-sm 0;}
+h2 { font-size: 42px; line-height: 48px; }
+h3 { font-size: 36px; line-height: 40px; }
+h4 { font-size: 24px; line-height: 40px; }
+h5 { font-size: 18px; line-height: 30px; }
+
+a {
+    font-family: $font-family-medium;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: $color-black;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+}
+
+p {
+    font-family: $font-family-regular;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: $spacing-sm;
+}
+
+li{
+    list-style: none;
+}
+ul{
+        -webkit-padding-start: 0;
+}
+
+.yellow-line{
+    position:relative;
+    padding-bottom: 5px;
+    &:after{
+        content:"";
+        position:absolute;
+        bottom:0;
+        left:0;
+        height: 4px;
+        width: 68px;
+        background-color: #f9c910;
+        margin: 0;
+    }
+}
+
+.font-article-body {
+    font-family: $font-family-light;
+    font-size: 24px;
+    line-height: 32px;
+}
+.font-article-caption {
+    font-family: $font-family-light;
+    font-size: 14px;
+    line-height: 32px;
+}
+.font-article-carousel-number {
+    font-family: $font-family-thin;
+    font-size: 42px;
+    line-height: 42px;
+}
+.font-drop-cap {
+    font-family: $font-family-medium;
+    font-size: 64px;
+    line-height: 64px;
+}
+.font-pull-quote {
+    font-family: $font-pull-quote;
+    font-size: 36px;
+    line-height: 41px;
+}
+
+.font-eyebrow {
+    font-family: $font-eyebrow;
+    font-size: 22px;
+    line-height: 26px;
+    margin: $spacing-md 0;
+}
+
+.font-caption {
+    font-family: $font-family-bold;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.font-copy-promo-body {
+    font-family: $font-family-light;
+    font-size: 22px;
+    line-height: 22px;
+}
+.font-copy-credit {
+    font-family: $font-family-light;
+    font-size: 14px;
+    line-height: 14px;
+}
+.font-nav-title {
+    font-family: $font-family-bold;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left:-$gutter-width * 2;
+    padding-left:$gutter-width * 2;
+    background:$color-primary-d1-yellow;
+    position:relative;
+    height:30px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0; right: 0;
+        border-bottom: 30px solid white;
+        border-left: 30px solid $color-primary-d1-yellow;
+        width: 0;
+    }
+}
+.font-nav-link a{
+    font-family: $font-family-bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+select{
+    font-family: $font-family-regular;
+    font-size:16px;
+}
+
+/*
+Responsive (mobile first)
+XS: 0 | SM: 576px | MD: 768px | LG: 992px | XL: 1200px
+----------------------------------------------------------
+*/
+
+/* SM Phone */
+@include media-breakpoint-up(xs) {
+
+}
+
+/* SM Phone */
+@include media-breakpoint-up(sm) {
+
+}
+
+/* MD Tablet */
+@include media-breakpoint-up(md) {
+
+    h1 { font-size: 60px; line-height: 60px; letter-spacing: 0.5px; }
+    h2 { font-size: 42px; line-height: 48px; }
+    h3 { font-size: 36px; line-height: 40px; }
+    h4 { font-size: 24px; line-height: 40px; }
+    h5 { font-size: 18px; line-height: 30px; }
+
+    a {
+        font-family: $font-family-medium;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0;
+        color: $color-black;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        }
+    }
+
+    p {
+        font-family: $font-family-regular;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    li{
+        list-style: none;
+    }
+    ul{
+            -webkit-padding-start: 0;
+    }
+
+    .font-article-body {
+        font-family: $font-family-light;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .font-article-caption {
+        font-family: $font-family-light;
+        font-size: 14px;
+        line-height: 32px;
+    }
+    .font-article-carousel-number {
+        font-family: $font-family-thin;
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .font-drop-cap {
+        font-family: $font-family-medium;
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .font-pull-quote {
+        font-family: $font-pull-quote;
+        font-size: 36px;
+        line-height: 41px;
+    }
+    .font-eyebrow {
+        font-family: $font-eyebrow;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .font-caption {
+        font-family: $font-family-bold;
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .font-copy-promo-body {
+        font-family: $font-family-light;
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .font-copy-credit {
+        font-family: $font-family-light;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .font-nav-title {
+        font-family: $font-family-bold;
+        font-size: 14px;
+        line-height: 30px;
+        margin-left:-$gutter-width * 2;
+        padding-left:$gutter-width * 2;
+        background:$color-primary-d1-yellow;
+        position:relative;
+        height:30px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0; right: 0;
+            border-bottom: 30px solid white;
+            border-left: 30px solid $color-primary-d1-yellow;
+            width: 0;
+        }
+    }
+    .font-nav-link a{
+        font-family: $font-family-bold;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
+
+/* LG Desktop */
+@include media-breakpoint-up(lg) {
+
+}
+
+/* XL Desktop */
+@include media-breakpoint-up(xl) {
+
+}

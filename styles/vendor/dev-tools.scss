@@ -1,0 +1,74 @@
+/*
+--------------------------------------------------
+	Development tools
+--------------------------------------------------
+*/
+
+#bs3_overlay {
+	display: none;
+	left: 0;
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+
+	&.active {
+		display: block;
+	}
+
+	i {
+		display: block;
+		background: red;
+		opacity: 0.4;
+	}
+}
+
+#bs3_toggle {
+	background: rgba(0,0,0,0.75);
+	border: 2px solid #fff;
+	box-shadow: 0 0 2px #000;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	padding: 0.5em 2.5em 0.5em 0.5em;
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	z-index: 10000;
+
+	.close {
+		font-size: 10px;
+		position: absolute;
+		right: 10px;
+		top: 13px;
+	}
+}
+
+/*
+
+.toolbar-loading {
+    .component-global-navigation {
+        .mobile {
+            margin-top: 45px;
+            border: solid 1px red;
+        }
+    }
+    .main {
+        margin-top: 77px;
+        border: solid 1px brown;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .component-global-navigation {
+            margin-top: 100px;
+            border: solid 1px green;
+        }
+        .main {
+            margin-top: 132px;
+            border: solid 1px blue;
+        }
+    }
+}
+*/

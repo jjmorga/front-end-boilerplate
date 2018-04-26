@@ -1,0 +1,78 @@
+// bower:scss
+// endbower
+/*
+--------------------------------------------------
+    Global SCSS
+--------------------------------------------------
+*/
+
+body {
+	background: white;
+
+    .main {
+        background: $color-light-gray;
+        /* LG Desktop */
+        @include media-breakpoint-up(md) {
+            padding-top: 140px;
+        }
+
+        &.no-margin {
+            padding-top: 0;
+        }
+
+    }
+}
+
+.page-wrapper{
+    background:white;
+    padding: 80px 15px 0 15px;
+    @include media-breakpoint-up(md) {
+        padding: 8.33333% 0;
+    }
+}
+
+.relative-wrapper{
+	position:relative;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.banner-flag {
+    font-family: $font-family-bold;
+    color: white;
+    width: auto;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 17px;
+    padding: 17px 60px 16px 19px;
+    -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 34px) 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 34px) 100%, 0% 100%);
+}
+
+
+.visible-mobile{
+    /* LG Desktop */
+    @include media-breakpoint-up(md) {
+        display:none;
+    }
+}
+
+.visible-desktop{
+    /* LG Desktop */
+    @include media-breakpoint-down(md) {
+        display:none;
+    }
+}
+
+ol {
+    li {
+        list-style: inherit;
+    }
+}

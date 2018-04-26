@@ -1,0 +1,52 @@
+﻿/*
+--------------------------------------------------
+    Icons - svg 
+-------------------------------------------------- 
+*/
+
+@mixin logo($class, $background-image: none) {
+    .logo-#{$class} {
+        background-image: $background-image;
+        background-repeat: no-repeat;
+    }
+}
+
+//.logo-blue
+@include logo("blue", $background-image: url('../images/brand/logo-blue.svg'));
+
+//.logo-white
+@include logo("white", $background-image: url('../images/brand/logo-white.svg'));
+
+//.logo-color
+@include logo("color", $background-image: url('../images/brand/logo-color.svg'));
+
+//.logo-black
+@include logo("black", $background-image: url('../images/brand/logo-black.svg'));
+
+//.lci-emblem-k
+@include logo("lci-emblem-k", $background-image: url('../images/brand/LCI emblem_K.svg'));
+
+//.lci-sig-cool-gray11
+@include logo("lci-sig-cool-gray11", $background-image: url('../images/brand/LCI_sig_cool-gray11.svg'));
+
+//.lci-logo-txt-1color-black
+@include logo("lci-logo-txt-1color-black", $background-image: url('../images/brand/lci-logo-txt-1color_black.svg'));
+
+//.lci-logo-txt-1color-blue
+@include logo("lci-logo-txt-1color-blue", $background-image: url('../images/brand/lci-logo-txt-1color_blue.svg'));
+
+//.lci-logo-txt-1color-white
+@include logo("lci-logo-txt-1color-white", $background-image: url('../images/brand/lci-logo-txt-1color_white.svg'));
+
+//.lci-logo-txt-2color-bluesig
+@include logo("lci-logo-txt-2color-bluesig", $background-image: url('../images/brand/lci-logo-txt-2color_bluesig.svg'));
+
+//.lci-logo-txt-2color-centered
+@include logo("lci-logo-txt-2color-centered", $background-image: url('../images/brand/lci-logo-txt-2color_centered.svg'));
+
+//.lci-logo-txt-2color-centered-stacked
+@include logo("lci-logo-txt-2color-centered-stacked", $background-image: url('../images/brand/lci-logo-txt-2color_centered_stacked.svg'));
+
+//.lci-logo-txt-3color
+@include logo("lci-logo-txt-3color", $background-image: url('../images/brand/lci-logo-txt-3color.svg'));
+

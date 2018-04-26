@@ -1,0 +1,51 @@
+﻿// bower:scss
+// endbower
+/*
+--------------------------------------------------
+    Variables
+-------------------------------------------------- 
+*/
+
+/* Colors Palette */
+$color-black:                   #000000;
+$color-light-blue:              #f2f8ff;
+$color-light-gray:              #f6f6f6;
+$color-white:                   #ffffff;
+
+/* Primary Colors, d = defined, e = extended */
+$color-primary-d1-yellow:       #ebb700;
+$color-primary-e1-yellow:       #f9c910;
+$color-primary-d2-blue:         #00338d;
+$color-primary-e2-blue:         #0a3dab;
+$color-primary-d3-gray:         #56565a;
+$color-primary-e3-gray:         #666669;
+
+/* Secondary Colors, d = defined, e = extended */
+$color-secondary-d4-cornflower: #407cca;
+$color-secondary-e4-cornflower: #4687db;
+$color-secondary-d5-navy:       #0d2240;
+$color-secondary-e5-navy:       #112e57;
+$color-secondary-d6-gray-5:     #b3b2b1;
+$color-secondary-e6-gray-5:     #bab9b8;
+$color-secondary-d7-violet:     #7a2582;
+$color-secondary-e7-violet:     #8b2994;
+$color-secondary-d8-spearmint:  #00ad68;
+$color-secondary-e8-spearmint:  #00bd71;
+$color-secondary-d9-tangerine:  #ff5b35;
+$color-secondary-e9-tangerine:  #ff6b4a;
+$color-secondary-d10-marigold:  #ffa50c;
+$color-secondary-e10-marigold:  #feb13e;
+$color-secondary-d11-watermelon:#ff312a;
+$color-secondary-e11-watermelon:#ff4844;
+
+/* Service Area Colors */
+$color-sa-diabetes:             #3399ff;
+$color-sa-e-diabetes:           #48a3ff;
+$color-sa-environment:          #8bc53f;
+$color-sa-e-environment:        #a1cf64;
+$color-sa-hunger:               #ff721d;
+$color-sa-e-hunger:             #fb893c;
+$color-sa-pediatric-cancer:     #feb302;
+$color-sa-e-pediatric-cancer:   #fbc120;
+$color-sa-vision:               #56186a;
+$color-sa-e-vision:             #7c358a;
